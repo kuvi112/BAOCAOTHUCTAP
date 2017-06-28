@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ongnauvi.nhacviec.ThemCV">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="15dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#1C1C1C"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/LayoutCV"
+        android:background="#424242"
+        android:orientation="vertical"
+        android:layout_height="250dp">
+
+        <EditText
+            android:id="@+id/editTenCv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="top|left"
+            android:hint="Tên Công Việc"
+            android:inputType="textCapWords|textMultiLine"
+            android:lines="4"
+            android:minLines="4"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/primary_text_disabled_material_dark"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editMt"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="top|left"
+            android:hint="Mô Tả Công Việc"
+            android:inputType="textCapWords|textMultiLine"
+            android:lines="4"
+            android:minLines="4"
+            android:scrollHorizontally="false"
+
+            android:textColorHint="@color/primary_text_disabled_material_dark"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutNgay"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/LayoutCV">
+
+        <ImageView
+            android:id="@+id/IconDate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_view_day_grey600_24dp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/BtnNgay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/IconDate"
+            android:textSize="13sp"
+            android:text="Chọn Ngày" />
+
+        <TextView
+            android:id="@+id/txtNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/BtnNgay"
+            android:text="ngày"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutGio"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/LayoutNgay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:id="@+id/IconTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_access_time_grey600_24dp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/BtnGio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/IconTime"
+            android:text="Chọn Giờ" />
+
+        <TextView
+            android:id="@+id/txtGio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/BtnGio" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutLap"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/LayoutGio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/IconLap"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_sync_grey600_24dp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/BtnLap"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/IconLap"
+            android:text="Kiểu Lặp" />
+
+        <TextView
+            android:id="@+id/txtKieuLap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiểu Lặp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/BtnLap" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

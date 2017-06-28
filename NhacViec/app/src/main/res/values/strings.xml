@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NhacViec</string>
+    <string name="title_activity_tab_ds">TabDS</string>
+    <string name="title_activity_ChinhSuaCV">Edit ChinhSua</string>
+</resources>

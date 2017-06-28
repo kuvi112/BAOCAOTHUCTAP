@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#58FAD0"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thay Đổi Thời Khóa Biểu!!!"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:hint="Tên Môn Học, Phòng Học, ..."/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnChinhSua"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Chỉnh Sửa" />
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Hủy"/>
+    </LinearLayout>
+
+</LinearLayout>
